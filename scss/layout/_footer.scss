@@ -1,0 +1,18 @@
+footer{
+    grid-area: footer;
+}
+.foot{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+.ulFoot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    li{
+        list-style: none;
+    }
+}

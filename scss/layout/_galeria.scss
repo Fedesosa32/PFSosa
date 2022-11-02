@@ -1,0 +1,30 @@
+.galeria{
+    background-image: url(../assets/img/Galeria.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.containerGaleria{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr) 5%;
+    grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+.containerGaleriaImg{
+    margin-left: 65px;
+    margin-right: 65px;
+    .carousel-item img{
+        height: 90vh;
+        border-radius: 40px;
+    }
+}
+.mira{
+    padding-top: 20px;
+}
+.prog{
+    text-align: center;
+}

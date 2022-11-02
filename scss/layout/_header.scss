@@ -1,0 +1,37 @@
+header{
+    margin-bottom: 15px;
+    position: relative;
+    grid-area: header;
+}
+.navbar {
+    display: flex;
+    font-size: 25px;
+    font-family: "inria sans";
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top: 10px;  
+        li {
+        list-style: none;  
+            a {text-decoration: none;
+                color: white;
+            }
+        }
+}
+.nav-link{
+    color: white;
+    font-family: "inria sains";
+    font-size: 25px;
+    text-align: right;
+}
+.navbar-toggler{
+    color: white;
+}
+.logo{  
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+}

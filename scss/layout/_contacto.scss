@@ -1,0 +1,45 @@
+.contacto{
+    background-image: url(../assets/img/Contacto.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.containerContacto{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr) 5%;
+    grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+.divCont{
+    padding-top: 20px;
+}
+.h4Contacto{
+    text-align: left;
+    margin-left: 20px;
+    @include titulos (40px, normal, white, titillium web)
+}
+.p4Contacto{
+    margin-left: 20px;
+    @include parrafos (18px, normal, white, titillium web, left)
+}
+.cuadro{
+    text-align: center;
+}
+.datosPersonales{
+    padding: 10px;
+    @include parrafos (25px, normal, white, titillium web, none)
+}
+.datosDeContacto{
+    @extend .datosPersonales;
+    font-size: 15px;
+}
+.dicipline{
+    writing-mode: vertical-lr;
+    margin-left: 75%;
+    font-size: 60px;
+}
+

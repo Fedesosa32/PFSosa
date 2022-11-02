@@ -1,0 +1,85 @@
+.conocenos{
+    background-image: url(../assets/img/Conocenos.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.containerConocenos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr) 5%;
+    grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+h2{
+    letter-spacing: 10px;
+    text-align: center;
+    @include titulos (100px, bold, yellow, titillium web)
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+.profes{
+    width: 280px;
+    height: 300px;
+    border: 5px solid yellow;
+    border-radius: 25px;
+}
+.profes{
+	-webkit-animation: profes 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: profes 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes profes {
+    0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+    }
+}
+@keyframes profes {
+    0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+    }
+}
+.p3{
+    @include parrafos (24px, normal, white, titillium web, center)
+}
+.p4{
+    padding: 4px;
+    @include parrafos (18px, normal, white, titillium web, center)
+}
+h3{
+    @include titulos (60px, bold, yellow, titillium web)
+}
+.ubicacion{
+    text-align: center;
+    @include titulos (50px, bold, yellow, titillium web)
+}
+.maps{
+    text-align: center;
+    .mapa{
+        height: 260px;
+        width:  260px;
+        padding-bottom: 15px;
+    }
+}
+

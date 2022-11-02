@@ -1,0 +1,15 @@
+@mixin parrafos ($tama, $fuente, $colors, $fam, $texal) {
+    font-size: $tama;
+    font-style: $fuente;
+    color: $colors;
+    font-family: $fam;
+    text-align: $texal;
+    
+}
+@mixin titulos ($tama, $fuente, $colors, $fam) {
+    font-size: $tama;
+    font-style: $fuente;
+    color: $colors;
+    font-family: $fam;
+    
+}

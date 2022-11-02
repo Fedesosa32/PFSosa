@@ -1,0 +1,166 @@
+@media (max-width: 768px){
+    .containerInicio{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 65% 15% 10%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        background-image: url(../assets/img/Inicio.tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .containerConocenos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 65% 19% 6%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        background-image: url(../assets/img/Conocenos-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .containerClases{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 65% 18% 7%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        background-image: url(../assets/img/Clases-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .containerGaleria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 65% 17% 8%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        background-image: url(../assets/img/Galeria-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .containerContacto{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 65% 17% 8%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+        background-image: url(../assets/img/Contacto-celu.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .navbar{
+        display: flex;
+        font-size: 20px;
+        font-family: "inria sans";
+        gap: 3px;
+        justify-content:flex-end;
+        padding-top: 20px;
+        z-index: 1000;
+    }
+    .logo{  
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    h1{
+        letter-spacing: 7px;
+        @include titulos (80px, bold, yellow, titillium web)
+    }
+    h2{
+        letter-spacing: 7px;
+        @include titulos (80px, bold, yellow, titillium web)
+    }
+    h4{
+        text-align: center;
+        padding-bottom: 10px;
+        @include titulos (30px, normal, white, titillium web)
+    }
+    .h4Contacto{
+        text-align: left;
+        margin-left: 20px;
+        @include titulos (30px, normal, white, titillium web)
+    }
+    .p{
+        padding-top: 5px;
+        @include parrafos (30px, bold, white, titillium web, justify)
+    }
+    .p1{
+        display: flex;
+        writing-mode: vertical-lr;
+        margin-left: 85%;
+        @include parrafos (50px, normal, white, titillium web, right)
+    }
+    .p2{
+        margin-right: 25%;
+        padding-bottom: 50px;
+        @include parrafos (100px, bold, white, titillium web, right)
+    }
+    .p3{
+        @include parrafos (16px, normal, white, titillium web, center)
+    }
+    .p4{
+    padding: 2px;
+        @include parrafos (14px, normal, white, titillium web, center)
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding-top: 25px;
+    }
+    .profes{
+        width: 200px;
+        height: 220px;
+        border: 2px solid yellow;
+        border-radius: 15px;
+    }
+    
+    .mapa{
+        text-align: center;
+        height: 150px;
+        width: 150px;
+        padding-bottom: 40px;
+    }
+    .containerClasesImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        .carousel-item img{
+            height: 70vh;
+            border-radius: 40px;
+        }
+    }
+    .ulFoot{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+        .foot{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .nav-link{
+        color: white;
+        font-family: "inria sains";
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,80 @@
+.inicio{
+    background-image: url(../assets/img/Inicio.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.containerInicio{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr) 5%;
+    grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+.limites{
+    padding-left: 20px;
+}
+h1{
+    letter-spacing: 10px;
+    @include titulos (150px, bold, yellow, titillium web)
+}
+.strong {
+	-webkit-animation: strong 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: strong 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes strong {
+    0% {
+letter-spacing: -0.5em;
+-webkit-transform: translateZ(-800px);
+transform: translateZ(-800px);
+-webkit-filter: blur(12px);
+filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-filter: blur(0);
+filter: blur(0);
+opacity: 1;
+}
+}
+@keyframes strong {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    -webkit-filter: blur(0);
+        filter: blur(0);
+    opacity: 1;
+    }
+}
+.p{
+    padding-top: 20px;
+    @include parrafos (40px, bold, white, titillium web, left)
+}
+.pDetalle{
+    color: yellow;
+}
+
+.p1{
+    display: flex;
+    writing-mode: vertical-lr;
+    margin-left: 85%;
+    @include parrafos (64px, normal, white, titillium web, right)
+}
+.p2{
+    margin-right: 25%;
+    padding-bottom: 50px;
+    @include parrafos (130px, bold, white, titillium web, right)
+}

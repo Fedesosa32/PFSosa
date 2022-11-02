@@ -1,0 +1,146 @@
+@media (max-width: 575px){
+    .containerInicio{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-image: url(../assets/img/inicio-cel2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    .containerConocenos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 84% 6%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-image: url(../assets/img/Conocenos-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    .containerClases{
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 80% 7%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-image: url(../assets/img/Clases-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    .containerGaleria{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 83% 7%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-image: url(../assets/img/Galeria-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    
+    .containerContacto{
+    grid-template-rows: 12% 78% 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-image: url(../assets/img/Contacto-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    .logo{  
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        padding-top: 10px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .p{
+        display: none;
+    }
+    .p1{
+        display: none;
+    }
+    h1{
+        letter-spacing: 1px;
+        text-align: center;
+        writing-mode:vertical-lr;
+        text-orientation: upright;
+        padding-top: 40px;
+        margin-left: 43%;
+        @include titulos (65px, bold, yellow, titillium web)
+    }
+    h2{
+        letter-spacing: 2px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        @include titulos (55px, bold, yellow, titillium web)
+    }
+    h4{
+        text-align: center;
+        padding-bottom: 5px;
+        @include titulos (25px, normal, white, titillium web)
+    }
+    p2{
+        padding: 0px;
+        margin-left: 43%;
+        margin-right: 36%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        @include parrafos (25px, bold, white, titillium web, center)
+    }
+    .p3{
+        @include parrafos (14px, normal, white, titillium web, center)
+    }
+    .p4{
+        padding: 10px;
+        @include parrafos (12px, normal, white, titillium web, none)
+    }
+    .ubicacion{
+        display: none;
+    }
+    .mapa{
+        display: none;
+    }
+    .ulFoot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        .foot{
+            height: 30px;
+            width: 30px;
+        }
+        
+    }
+    .nav-link{
+        color: white;
+        font-family: "inria sains";
+        font-size: 20px;
+        text-align: end;
+        font-style: bold;
+        }
+    .carousel-item img{
+        height: 65vh;
+        border-radius: 40px;
+    }
+    .h4Contacto{
+        display: none;
+    }
+    .datosDeContacto{
+        padding: 5px;
+        @include parrafos (14px, normal, white, titillium web, none)
+    }
+    .p4Contacto{
+        @include parrafos (14px, normal, white, titillium web, center)
+    }
+    
+}

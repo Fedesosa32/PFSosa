@@ -1,0 +1,25 @@
+{
+  "name": "preentrega1sosa",
+  "version": "1.0.0",
+  "description": "> El proyecto consta de un archivo index.html y sus respectivas pages para dar forma a una web de 5 htmls. Se trabajo el css correspondiente para aplicar todas las propiedades aprendidas en clase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/style.scss css/style.css" ,
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fedesosa32/proyecto-full-gym.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fedesosa32/proyecto-full-gym/issues"
+  },
+  "homepage": "https://github.com/Fedesosa32/proyecto-full-gym#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

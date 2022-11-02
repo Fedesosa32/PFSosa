@@ -1,628 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans&family=Titillium+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Titillium+Web:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
+.inicio {
+  background-image: url(../assets/img/Inicio.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-}
-.inicio{
-    background-image: url(../assets/img/Inicio.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.conocenos{
-    background-image: url(../assets/img/Conocenos.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.clases{
-    background-image: url(../assets/img/Clases.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.galeria{
-    background-image: url(../assets/img/Galeria.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.contacto{
-    background-image: url(../assets/img/Contacto.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.containerInicio{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 10% repeat(2, 1fr) 5%;
-    grid-template-areas:
-    "header header header header header"
-    "main main main main main"
-    "main main main main main"
-    "footer footer footer footer footer"
-    ;
-}
-.containerConocenos{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 10% repeat(2, 1fr) 5%;
-    grid-template-areas:
-    "header header header header header"
-    "main main main main main"
-    "main main main main main"
-    "footer footer footer footer footer"
-    ;
-}
-header{
-    margin-bottom: 15px;
-    position: relative;
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-.encabezado{
-    width: 100%;
-    height: 130px;
-}
-.logo{  
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    padding-top: 15px;
-    padding-left: 20px;
+.containerInicio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr) 5%;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
 
-}
-.navbar{
-    display: flex;
-    font-size: 25px;
-    font-family: "inria sans";
-    gap: 20px;
-    justify-content:flex-end;
-    margin-right: 20px;
-    padding-top: 50px;
-    height: 130px;
-}
-.navbar li{
-    list-style: none;
-}
-.navbar li a{
-    text-decoration: none;
-    color: white;
+.limites {
+  padding-left: 20px; }
 
-}
-.limites{
-    padding-left: 20px;
-}
-h1{
-    font-size: 150px;
-    color: yellow;
-    font-style: bold;
-    font-family: "titillium web";
-    letter-spacing: 10px;
-}
+h1 {
+  letter-spacing: 10px;
+  font-size: 150px;
+  font-style: bold;
+  color: yellow;
+  font-family: titillium web; }
+
 .strong {
-	-webkit-animation: strong 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: strong 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+  -webkit-animation: strong 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: strong 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
 @-webkit-keyframes strong {
-    0% {
-letter-spacing: -0.5em;
--webkit-transform: translateZ(-800px);
-transform: translateZ(-800px);
--webkit-filter: blur(12px);
-filter: blur(12px);
-opacity: 0;
-}
-100% {
--webkit-transform: translateZ(0);
-transform: translateZ(0);
--webkit-filter: blur(0);
-filter: blur(0);
-opacity: 1;
-}
-}
-@keyframes strong {
-    0% {
+  0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-800px);
     transform: translateZ(-800px);
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    opacity: 0;
-    }
-    100% {
+    opacity: 0; }
+  100% {
     -webkit-transform: translateZ(0);
-        transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-filter: blur(0);
-        filter: blur(0);
-    opacity: 1;
-    }
-}
+    filter: blur(0);
+    opacity: 1; } }
 
-.p{
-    font-size: 40px;
-    font-style: bold;
-    font-family: "titillium web";
-    color: white;
-    text-align: left;
-    padding-top: 20px;
-}
-.pDetalle{
-    color: yellow;
-}
+@keyframes strong {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
 
-.p1{
-    font-size: 64px;
-    font-family: "titillium web";
-    color: white;
-    font-style: normal;
-    text-align: right;
-    display: flex;
-    writing-mode: vertical-lr;
-    margin-left: 85%;
-}
-.p2{
-    font-size: 130px;
-    color: white;
-    font-style: bold;
-    font-family: "titillium web";
-    text-align: right;
-    margin-right: 25%;
-    padding-bottom: 50px;
-}
-h2{
-    font-size: 100px;
-    font-family: "titillium web";
-    letter-spacing: 10px;
-    color: yellow;
-    font-style: bold;
-    text-align: center;
-}
-.training{
-    text-align: center;
+.p {
+  padding-top: 20px;
+  font-size: 40px;
+  font-style: bold;
+  color: white;
+  font-family: titillium web;
+  text-align: left; }
 
-}
-.dicipline{
-    writing-mode: vertical-lr;
-    margin-left: 80%;
-}
+.pDetalle {
+  color: yellow; }
 
-.prog{
-    text-align: center;
-}
+.p1 {
+  display: flex;
+  writing-mode: vertical-lr;
+  margin-left: 85%;
+  font-size: 64px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web;
+  text-align: right; }
 
-.foot{
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
-}
-.ulFoot{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 55px;
-}
-.containerClases{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+.p2 {
+  margin-right: 25%;
+  padding-bottom: 50px;
+  font-size: 130px;
+  font-style: bold;
+  color: white;
+  font-family: titillium web;
+  text-align: right; }
 
-.card img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+.conocenos {
+  background-image: url(../assets/img/Conocenos.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
-.profes{
-    width: 300px;
-    height: 320px;
-    border: 5px solid yellow;
-    border-radius: 25px;
-}
-.profes{
-	-webkit-animation: profes 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: profes 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+.containerConocenos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr) 5%;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
+
+h2 {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 100px;
+  font-style: bold;
+  color: yellow;
+  font-family: titillium web; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 55px; }
+
+.profes {
+  width: 280px;
+  height: 300px;
+  border: 5px solid yellow;
+  border-radius: 25px; }
+
+.profes {
+  -webkit-animation: profes 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: profes 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
 @-webkit-keyframes profes {
-    0% {
+  0% {
     -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
     transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
-    opacity: 0;
-    }
-    100% {
+    opacity: 0; }
+  100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
     transform: rotateY(0deg) translateY(0) skewY(0deg);
-    opacity: 1;
-    }
-}
+    opacity: 1; } }
+
 @keyframes profes {
-    0% {
+  0% {
     -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
     transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
-    opacity: 0;
-    }
-    100% {
+    opacity: 0; }
+  100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
     transform: rotateY(0deg) translateY(0) skewY(0deg);
-    opacity: 1;
-    }
-}
+    opacity: 1; } }
 
-.p3{
-    font-size: 24px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    text-align: center;
-}
-.p4{
-    font-size: 18px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    text-align: center;
-    padding: 10px;
-}
-.p4Contacto{
-    font-size: 18px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    text-align: left;
-    margin-left: 20px;
-}
-h3{
-    font-size: 60px;
-    color: yellow;
-    font-style: bold;
-    font-family: "titillium web";
-}
-.ubicacion{
-    font-size: 60px;
-    color: yellow;
-    font-style: bold;
-    text-align: center;
-    font-family: "titillium web";
-}
-.maps{
-    text-align: center;
-}
-.mapa{
-    height: 300px;
-    width: 300px;
-    padding-bottom: 15px;
-}
-.imgClases{
-    height: 300px;
-    width: 280px;
-    justify-content: center;
-    border: 2px solid yellow;
-    border-radius: 15px;
-    margin-top: 10px;
-}
-h4{
-    font-size: 40px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    text-align: center;
-    padding-bottom: 20px;
-}
-.h4Contacto{
-    font-size: 40px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    text-align: left;
-    margin-left: 20px;
-}
-.imgGaleria{
-    height: 200px;
-    width: 180px;
-    border: 2px solid yellow;
-    border-radius: 15px;
-}
-.imgGaleria1{
-    height: 200px;
+.p3 {
+  font-size: 24px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web;
+  text-align: center; }
+
+.p4 {
+  padding: 4px;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web;
+  text-align: center; }
+
+h3 {
+  font-size: 60px;
+  font-style: bold;
+  color: yellow;
+  font-family: titillium web; }
+
+.ubicacion {
+  text-align: center;
+  font-size: 50px;
+  font-style: bold;
+  color: yellow;
+  font-family: titillium web; }
+
+.maps {
+  text-align: center; }
+  .maps .mapa {
+    height: 260px;
     width: 260px;
-    border: 2px solid yellow;
-    border-radius: 15px;
-}
-.datosPersonales{
-    font-size: 15px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    padding: 10px;
-}
-.datosDeContacto{
-    font-size: 14px;
-    color: white;
-    font-style: normal;
-    font-family: "titillium web";
-    padding: 10px;
-}
-.cuadro{
-    width: 500px;
-    text-align: center;
-    margin-left: 20px;
-}
-.nav-link{
-    color: white;
-    font-family: "inria sains";
-    font-size: 25px;
-    text-align: center;
-}
-.navbar-toggler{
-    color: white;
-}
+    padding-bottom: 15px; }
 
+.clases {
+  background-image: url(../assets/img/Clases.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
-@media (max-width: 768px){
-.containerInicio{
+.containerClases {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr) 5%;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
+
+.containerClasesImg {
+  margin-left: 35px;
+  margin-right: 35px; }
+  .containerClasesImg .carousel-item img {
+    height: 90vh;
+    border-radius: 40px; }
+
+.galeria {
+  background-image: url(../assets/img/Galeria.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.containerGaleria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr) 5%;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
+
+.containerGaleriaImg {
+  margin-left: 65px;
+  margin-right: 65px; }
+  .containerGaleriaImg .carousel-item img {
+    height: 90vh;
+    border-radius: 40px; }
+
+.mira {
+  padding-top: 20px; }
+
+.prog {
+  text-align: center; }
+
+.contacto {
+  background-image: url(../assets/img/Contacto.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.containerContacto {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr) 5%;
+  grid-template-areas: "header header header header header" "main main main main main" "main main main main main" "footer footer footer footer footer"; }
+
+.divCont {
+  padding-top: 20px; }
+
+.h4Contacto {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 40px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web; }
+
+.p4Contacto {
+  margin-left: 20px;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web;
+  text-align: left; }
+
+.cuadro {
+  text-align: center; }
+
+.datosPersonales, .datosDeContacto {
+  padding: 10px;
+  font-size: 25px;
+  font-style: normal;
+  color: white;
+  font-family: titillium web;
+  text-align: none; }
+
+.datosDeContacto {
+  font-size: 15px; }
+
+.dicipline {
+  writing-mode: vertical-lr;
+  margin-left: 75%;
+  font-size: 60px; }
+
+header {
+  margin-bottom: 15px;
+  position: relative;
+  grid-area: header; }
+
+.navbar {
+  display: flex;
+  font-size: 25px;
+  font-family: "inria sans";
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 20px;
+  padding-top: 10px; }
+  .navbar li {
+    list-style: none; }
+    .navbar li a {
+      text-decoration: none;
+      color: white; }
+
+.nav-link {
+  color: white;
+  font-family: "inria sains";
+  font-size: 25px;
+  text-align: right; }
+
+.navbar-toggler {
+  color: white; }
+
+.logo {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  padding-top: 15px;
+  padding-left: 20px; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+.foot {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px; }
+
+.ulFoot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px; }
+  .ulFoot li {
+    list-style: none; }
+
+@media (max-width: 768px) {
+  .containerInicio {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10% 65% 15% 10%;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
     background-image: url(../assets/img/Inicio.tablet.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.containerConocenos{
+    background-size: 100% 100%; }
+  .containerConocenos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10% 65% 15% 10%;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
+    grid-template-rows: 10% 65% 19% 6%;
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
     background-image: url(../assets/img/Conocenos-tablet.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.encabezado{
-    width: 100%;
-    height: 80px;
-}
-.navbar{
+    background-size: 100% 100%; }
+  .containerClases {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 65% 18% 7%;
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+    background-image: url(../assets/img/Clases-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .containerGaleria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 65% 17% 8%;
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+    background-image: url(../assets/img/Galeria-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .containerContacto {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 65% 17% 8%;
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+    background-image: url(../assets/img/Contacto-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .navbar {
     display: flex;
     font-size: 20px;
     font-family: "inria sans";
     gap: 3px;
-    justify-content:flex-end;
-    padding-top: 50px;
-    height: 100%;
-}
-.logo{  
+    justify-content: flex-end;
+    padding-top: 20px;
+    z-index: 1000; }
+  .logo {
     position: absolute;
     height: 80px;
     width: 80px;
     padding-top: 20px;
-    padding-left: 20px;
-}
-h1{
-    font-size: 80px;
-    color: yellow;
-    font-style: bold;
-    font-family: "titillium web";
+    padding-left: 20px; }
+  h1 {
     letter-spacing: 7px;
-}
-h2{
     font-size: 80px;
-    color: yellow;
     font-style: bold;
-    font-family: "titillium web";
+    color: yellow;
+    font-family: titillium web; }
+  h2 {
     letter-spacing: 7px;
-}
-
-.p{
+    font-size: 80px;
+    font-style: bold;
+    color: yellow;
+    font-family: titillium web; }
+  h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web; }
+  .h4Contacto {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web; }
+  .p {
+    padding-top: 5px;
     font-size: 30px;
     font-style: bold;
-    font-family: "titillium web";
     color: white;
-    text-align: justify;
-    padding-top: 5px;
-}
-
-.p1{
-    font-size: 50px;
-    font-family: "titillium web";
-    color: white;
-    font-style: normal;
-    text-align: right;
+    font-family: titillium web;
+    text-align: justify; }
+  .p1 {
     display: flex;
     writing-mode: vertical-lr;
     margin-left: 85%;
-}
-.p2{
-    font-size: 100px;
+    font-size: 50px;
+    font-style: normal;
     color: white;
-    font-style: bold;
-    font-family: "titillium web";
-    text-align: right;
+    font-family: titillium web;
+    text-align: right; }
+  .p2 {
     margin-right: 25%;
     padding-bottom: 50px;
-}
-.p3{
+    font-size: 100px;
+    font-style: bold;
+    color: white;
+    font-family: titillium web;
+    text-align: right; }
+  .p3 {
     font-size: 16px;
-    color: white;
     font-style: normal;
-    font-family: "titillium web";
-    text-align: center;
-}
-.p4{
+    color: white;
+    font-family: titillium web;
+    text-align: center; }
+  .p4 {
+    padding: 2px;
     font-size: 14px;
-    color: white;
     font-style: normal;
-    font-family: "titillium web";
-    text-align: center;
-    padding: 10px;
-}
-.container{
+    color: white;
+    font-family: titillium web;
+    text-align: center; }
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 25px;
-    padding-top: 25px;
-}
-.profes{
+    padding-top: 25px; }
+  .profes {
     width: 200px;
     height: 220px;
     border: 2px solid yellow;
-    border-radius: 15px;
-}
-.profes:hover{
-    transform: scale(1.2);
-}
-.mapa{
+    border-radius: 15px; }
+  .mapa {
     text-align: center;
-    height: 200px;
-    width: 200px;
-    padding-bottom: 70px;
-}
-.foot{
-    height: 30px;
-    width: 30px;
-}
-
-.ulFoot{
+    height: 150px;
+    width: 150px;
+    padding-bottom: 40px; }
+  .containerClasesImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; }
+    .containerClasesImg .carousel-item img {
+      height: 70vh;
+      border-radius: 40px; }
+  .ulFoot {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30px;
-}
-.nav-link{
+    padding-top: 10px; }
+    .ulFoot .foot {
+      height: 30px;
+      width: 30px; }
+  .nav-link {
     color: white;
     font-family: "inria sains";
-    font-size: 18px;
-}
+    font-size: 18px; } }
 
-}
-@media (max-width: 575px){
-    .containerInicio{
+@media (max-width: 575px) {
+  .containerInicio {
     grid-template-columns: 1fr;
     grid-template-rows: 10% 80% 10%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas: "header" "main" "footer";
     background-image: url(../assets/img/inicio-cel2.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    }
-    .logo{  
-        position: absolute;
-        height: 60px;
-        width: 60px;
-        padding-top: 20px;
-        padding-left: 20px;
-    }
-    .p{
-        display: none;
-    }
-    .p1{
-        display: none;
-    }
-
-    h1{
-        font-size: 65px;
-        color: yellow;
-        font-style: bold;
-        font-family: "titillium web";
-        letter-spacing: 1px;
-        text-align: center;
-        writing-mode:vertical-lr;
-        text-orientation: upright;
-        padding-top: 40px;
-        margin-left: 43%;
-    }
-    h2{
-        font-size: 65px;
-        color: yellow;
-        font-style: bold;
-        font-family: "titillium web";
-        letter-spacing: 2px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .p2{
-        font-size: 30px;
-        color: white;
-        font-style: bold;
-        font-family: "titillium web";
-        text-align: center;
-        padding: 0px;
-        margin-left: 43%;
-        margin-right: 36%;
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    .p3{
-        font-size: 14px;
-        color: white;
-        font-style: normal;
-        font-family: "titillium web";
-        text-align: center;
-    }
-    .p4{
-        font-size: 12px;
-        color: white;
-        font-style: normal;
-        font-family: "titillium web";
-        text-align: center;
-        padding: 10px;
-    }
-
-    .profes{
-        width: 150px;
-        height: 170px;
-        border: 1px solid yellow;
-        border-radius: 15px;
-    }
-    .profes:hover{
-        transform: scale(1.2);
-    }
-    .ubicacion{
-        display: none;
-    }
-    .mapa{
-        display: none;
-    }
-        
-    .ulFoot{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        
-    }
-    .foot{
-        height: 30px;
-        width: 30px;
-    }
-    .nav-link{
-        color: white;
-        font-family: "inria sains";
-        font-size: 20px;
-        text-align: end;
-        font-style: bold;        
-    }    
-
-}
+    background-size: 100% 100%; }
+  .containerConocenos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 84% 6%;
+    grid-template-areas: "header" "main" "footer";
+    background-image: url(../assets/img/Conocenos-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .containerClases {
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 80% 7%;
+    grid-template-areas: "header" "main" "footer";
+    background-image: url(../assets/img/Clases-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .containerGaleria {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 83% 7%;
+    grid-template-areas: "header" "main" "footer";
+    background-image: url(../assets/img/Galeria-celu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .containerContacto {
+    grid-template-rows: 12% 78% 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    background-image: url(../assets/img/Contacto-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .logo {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center; }
+  .p {
+    display: none; }
+  .p1 {
+    display: none; }
+  h1 {
+    letter-spacing: 1px;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding-top: 40px;
+    margin-left: 43%;
+    font-size: 65px;
+    font-style: bold;
+    color: yellow;
+    font-family: titillium web; }
+  h2 {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 55px;
+    font-style: bold;
+    color: yellow;
+    font-family: titillium web; }
+  h4 {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web; }
+  p2 {
+    padding: 0px;
+    margin-left: 43%;
+    margin-right: 36%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-style: bold;
+    color: white;
+    font-family: titillium web;
+    text-align: center; }
+  .p3 {
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web;
+    text-align: center; }
+  .p4 {
+    padding: 10px;
+    font-size: 12px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web;
+    text-align: none; }
+  .ubicacion {
+    display: none; }
+  .mapa {
+    display: none; }
+  .ulFoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; }
+    .ulFoot .foot {
+      height: 30px;
+      width: 30px; }
+  .nav-link {
+    color: white;
+    font-family: "inria sains";
+    font-size: 20px;
+    text-align: end;
+    font-style: bold; }
+  .carousel-item img {
+    height: 65vh;
+    border-radius: 40px; }
+  .h4Contacto {
+    display: none; }
+  .datosDeContacto {
+    padding: 5px;
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web;
+    text-align: none; }
+  .p4Contacto {
+    font-size: 14px;
+    font-style: normal;
+    color: white;
+    font-family: titillium web;
+    text-align: center; } }
